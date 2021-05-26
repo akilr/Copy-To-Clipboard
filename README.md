@@ -17,4 +17,4 @@ Import plugin file "dynamic_action_plugin_copy_to_clipboard.sql" from Source dir
   5) Enter some text that has to be shown as the Success Message.(Optional)
 
 <h2>Demo</h2>
-http://www.speech2form.com/ords/f?p=OPFG:COPY_TO_CLIPBOARD
+https://apex.oracle.com/pls/apex/workspace_akil/r/demo/copy-to-clipboard-plug-in
