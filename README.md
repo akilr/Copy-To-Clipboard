@@ -7,7 +7,7 @@ The plugin can be used for copying the content of <b>Text Field,Text Area</b> et
 The plugin can be used for copying the content of <b>Hidden</b> items also.
 
 <h2>Installation</h2>
-Import plugin file "dynamic_action_plugin_nl_detora_apex_copytoclipboard.sql" from Source directory into your application.
+Import plugin file "dynamic_action_plugin_copy_to_clipboard.sql" from Source directory into your application.
 
 <h2>How to Use</h2>
   1) Create a Dynamic Action. (eg: On Click of a button) <br>
