@@ -17,7 +17,7 @@ Import plugin file "dynamic_action_plugin_copy_to_clipboard.sql" from Source dir
   4) Select an Item from the list that has to be copied.<br>
   5) Enter some text that has to be shown as the Success Message.(Optional). For dynamic messages, a page item can also be substituted in this field (example: &ITEM_NAME.)
   
-  https://user-images.githubusercontent.com/30211230/119861985-a35ec100-bf35-11eb-9787-5223bea54f55.png
+  https://user-images.githubusercontent.com/30211230/119861985-a35ec100-bf35-11eb-9787-5223bea54f55.png <br>
   https://user-images.githubusercontent.com/30211230/119862138-d43ef600-bf35-11eb-9e3d-6cbac7706172.png
   
 <h2>Demo</h2>
