@@ -5,11 +5,13 @@
   "keywords" : ["copy","copy to clipboard","copy apex page item to clipboard","clipboard","dynamic action"],
   "homepage" : "https://github.com/akilr/Copy-To-Clipboard",
   "bugs" : {
-    "url" : "https://github.com/akilr/Copy-To-Clipboard/issues"
+    "url" : "https://github.com/akilr/Copy-To-Clipboard/issues",
+    "email" : "akilr2096@gmail.com"
   },
   "license" : "MIT",
   "author" : {
     "name" : "Akil R",
+    "email" : "akilr2096@gmail.com",
     "url" : "https://www.linkedin.com/in/akil-r-639812180/",
     "twitter" : "akil_ramesh96"
   },
