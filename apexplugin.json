@@ -1,0 +1,31 @@
+{
+  "name" : "Copy To Clipboard",
+  "version" : "v1.0",
+  "description" : "To copy content of an Apex item to the clipboard and shows the success message.",
+  "keywords" : ["copy","copy to clipboard","copy apex page item to clipboard","clipboard","dynamic action"],
+  "homepage" : "https://github.com/akilr/Copy-To-Clipboard",
+  "bugs" : {
+    "url" : "https://github.com/akilr/Copy-To-Clipboard/issues"
+  },
+  "license" : "MIT",
+  "author" : {
+    "name" : "Akil R",
+    "url" : "https://www.linkedin.com/in/akil-r-639812180/",
+    "twitter" : "akil_ramesh96"
+  },
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/akilr/Copy-To-Clipboard.git"
+  },
+  "oracle" : {
+    "versions" : ["11.2.0.1", "12.1.0.1", "12.2.0.1", "18.1.0","19.1.0","21.1"],
+    "apex" : {
+      "versions" : ["18.1","18.2","19.1","19.2","20.1","20.2","21.1"],
+      "plugin" : {
+        "internalName" : "AKIL.COPY_TO_CLIPBOARD_APEX",
+        "type" : "dynamic action",
+        "demo" : "https://apex.oracle.com/pls/apex/workspace_akil/r/demo/copy-to-clipboard-plug-in"
+      }
+    }
+  }
+}
