@@ -15,7 +15,7 @@ Import plugin file "dynamic_action_plugin_copy_to_clipboard.sql" from Source dir
   2) Create a True action.<br>
   3) Select the <b>Copy To Clipboard [Plug-in]</b> option.<br>
   4) Select an Item from the list that has to be copied.<br>
-  5) Enter some text that has to be shown as the Success Message.(Optional)
+  5) Enter some text that has to be shown as the Success Message.(Optional). For dynamic messages, a page item can also be substituted in this field (example: &ITEM_NAME.)
 
 <h2>Demo</h2>
 https://apex.oracle.com/pls/apex/workspace_akil/r/demo/copy-to-clipboard-plug-in
