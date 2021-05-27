@@ -24,7 +24,8 @@
       "plugin" : {
         "internalName" : "AKIL.COPY_TO_CLIPBOARD_APEX",
         "type" : "dynamic action",
-        "demo" : "https://apex.oracle.com/pls/apex/workspace_akil/r/demo/copy-to-clipboard-plug-in"
+        "demo" : "https://apex.oracle.com/pls/apex/workspace_akil/r/demo/copy-to-clipboard-plug-in",
+        "previewImage" : "https://github.com/akilr/Copy-To-Clipboard/blob/main/COPY_TO_CLIPBOARD.gif"
       }
     }
   }
