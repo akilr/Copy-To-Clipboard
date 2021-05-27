@@ -4,7 +4,8 @@ Plug-in for copying the content of an APEX item to the clipboard.
 
 <h2>Uses</h2>
 The plugin can be used for copying the content of <b>Text Field,Text Area</b> etc.. <br>
-The plugin can be used for copying the content of <b>Hidden</b> items also.
+The plugin can be used for copying the content of <b>Hidden</b> items also.<br>
+It also shows a success message after copying the content of an item. The success message can be customizable based on the users request.
 
 <h2>Installation</h2>
 Import plugin file "dynamic_action_plugin_copy_to_clipboard.sql" from Source directory into your application.
