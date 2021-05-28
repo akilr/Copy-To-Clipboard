@@ -16,24 +16,24 @@ wwv_flow_api.import_begin (
  p_version_yyyy_mm_dd=>'2021.04.15'
 ,p_release=>'21.1.0'
 ,p_default_workspace_id=>34855934618856717508
-,p_default_application_id=>91177
-,p_default_id_offset=>0
+,p_default_application_id=>117274
+,p_default_id_offset=>7559811305546521551
 ,p_default_owner=>'WORKSPACEAKIL'
 );
 end;
 /
  
-prompt APPLICATION 91177 - Demo
+prompt APPLICATION 117274 - Test App
 --
 -- Application Export:
---   Application:     91177
---   Name:            Demo
---   Date and Time:   12:36 Wednesday May 26, 2021
+--   Application:     117274
+--   Name:            Test App
+--   Date and Time:   06:20 Friday May 28, 2021
 --   Exported By:     AKILR20@GMAIL.COM
 --   Flashback:       0
 --   Export Type:     Component Export
 --   Manifest
---     PLUGIN: 7881100217584598764
+--     PLUGIN: 16152554132576998999
 --   Manifest End
 --   Version:         21.1.0
 --   Instance ID:     63113759365424
@@ -44,12 +44,12 @@ begin
   wwv_flow_api.g_mode := 'REPLACE';
 end;
 /
-prompt --application/shared_components/plugins/dynamic_action/copy_to_clipboard
+prompt --application/shared_components/plugins/dynamic_action/copy_to_clipboard_apex
 begin
 wwv_flow_api.create_plugin(
- p_id=>wwv_flow_api.id(7881100217584598764)
+ p_id=>wwv_flow_api.id(16152554132576998999)
 ,p_plugin_type=>'DYNAMIC ACTION'
-,p_name=>'COPY TO CLIPBOARD'
+,p_name=>'COPY.TO.CLIPBOARD.APEX'
 ,p_display_name=>'Copy To Clipboard'
 ,p_category=>'EFFECT'
 ,p_supported_ui_types=>'DESKTOP'
@@ -73,11 +73,12 @@ wwv_flow_api.create_plugin(
 ,p_substitute_attributes=>true
 ,p_subscribe_plugin_settings=>true
 ,p_version_identifier=>'1.0'
+,p_about_url=>'https://github.com/akilr/Copy-To-Clipboard'
 ,p_files_version=>57
 );
 wwv_flow_api.create_plugin_attribute(
- p_id=>wwv_flow_api.id(7882561956694638890)
-,p_plugin_id=>wwv_flow_api.id(7881100217584598764)
+ p_id=>wwv_flow_api.id(16154015871687039125)
+,p_plugin_id=>wwv_flow_api.id(16152554132576998999)
 ,p_attribute_scope=>'COMPONENT'
 ,p_attribute_sequence=>1
 ,p_display_sequence=>10
@@ -87,8 +88,8 @@ wwv_flow_api.create_plugin_attribute(
 ,p_is_translatable=>false
 );
 wwv_flow_api.create_plugin_attribute(
- p_id=>wwv_flow_api.id(7893859831956876812)
-,p_plugin_id=>wwv_flow_api.id(7881100217584598764)
+ p_id=>wwv_flow_api.id(16165313746949277047)
+,p_plugin_id=>wwv_flow_api.id(16152554132576998999)
 ,p_attribute_scope=>'COMPONENT'
 ,p_attribute_sequence=>2
 ,p_display_sequence=>20
@@ -123,8 +124,8 @@ end;
 /
 begin
 wwv_flow_api.create_plugin_file(
- p_id=>wwv_flow_api.id(7881215760417603413)
-,p_plugin_id=>wwv_flow_api.id(7881100217584598764)
+ p_id=>wwv_flow_api.id(16152669675410003648)
+,p_plugin_id=>wwv_flow_api.id(16152554132576998999)
 ,p_file_name=>'CopyToClipboard.js'
 ,p_mime_type=>'text/javascript'
 ,p_file_charset=>'utf-8'
