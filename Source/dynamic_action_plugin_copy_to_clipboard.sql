@@ -25,12 +25,12 @@ begin
 null;
 end;
 /
-prompt --application/shared_components/plugins/dynamic_action/copy_to_clipboard
+prompt --application/shared_components/plugins/dynamic_action/copy_to_clipboard_apex
 begin
 wwv_flow_api.create_plugin(
  p_id=>wwv_flow_api.id(5319287118471221)
 ,p_plugin_type=>'DYNAMIC ACTION'
-,p_name=>'COPY TO CLIPBOARD'
+,p_name=>'COPY.TO.CLIPBOARD.APEX'
 ,p_display_name=>'Copy To Clipboard'
 ,p_category=>'EFFECT'
 ,p_supported_ui_types=>'DESKTOP'
