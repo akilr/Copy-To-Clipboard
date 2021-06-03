@@ -1,6 +1,6 @@
 {
   "name" : "Copy To Clipboard",
-  "version" : "v1.0",
+  "version" : "v1.1",
   "description" : "To copy content of an APEX item to the clipboard and show the success message. Hidden items can also be copied. The success message can be customizable based on the users request. For dynamic messages, a page item can also be substituted in this field (example: &ITEM_NAME.)",
   "keywords" : ["copy","copy to clipboard","copy apex page item to clipboard","clipboard","dynamic action"],
   "homepage" : "https://github.com/akilr/Copy-To-Clipboard",
