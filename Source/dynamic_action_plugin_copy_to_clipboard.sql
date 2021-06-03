@@ -1,4 +1,3 @@
-prompt --application/set_environment
 set define off verify off feedback off
 whenever sqlerror exit sql.sqlcode rollback
 --------------------------------------------------------------------------------
@@ -6,50 +5,32 @@ whenever sqlerror exit sql.sqlcode rollback
 -- ORACLE Application Express (APEX) export file
 --
 -- You should run the script connected to SQL*Plus as the Oracle user
--- APEX_210100 or as the owner (parsing schema) of the application.
+-- APEX_050100 or as the owner (parsing schema) of the application.
 --
 -- NOTE: Calls to apex_application_install override the defaults below.
 --
 --------------------------------------------------------------------------------
 begin
 wwv_flow_api.import_begin (
- p_version_yyyy_mm_dd=>'2021.04.15'
-,p_release=>'21.1.0'
-,p_default_workspace_id=>34855934618856717508
-,p_default_application_id=>117274
-,p_default_id_offset=>7559811305546521551
-,p_default_owner=>'WORKSPACEAKIL'
+ p_version_yyyy_mm_dd=>'2016.08.24'
+,p_release=>'5.1.3.00.05'
+,p_default_workspace_id=>1870412561399862
+,p_default_application_id=>101
+,p_default_owner=>'AKIL_PLUGIN'
 );
 end;
 /
- 
-prompt APPLICATION 117274 - Test App
---
--- Application Export:
---   Application:     117274
---   Name:            Test App
---   Date and Time:   06:20 Friday May 28, 2021
---   Exported By:     AKILR20@GMAIL.COM
---   Flashback:       0
---   Export Type:     Component Export
---   Manifest
---     PLUGIN: 16152554132576998999
---   Manifest End
---   Version:         21.1.0
---   Instance ID:     63113759365424
---
-
+prompt --application/ui_types
 begin
-  -- replace components
-  wwv_flow_api.g_mode := 'REPLACE';
+null;
 end;
 /
-prompt --application/shared_components/plugins/dynamic_action/copy_to_clipboard_apex
+prompt --application/shared_components/plugins/dynamic_action/copy_to_clipboard
 begin
 wwv_flow_api.create_plugin(
- p_id=>wwv_flow_api.id(16152554132576998999)
+ p_id=>wwv_flow_api.id(5319287118471221)
 ,p_plugin_type=>'DYNAMIC ACTION'
-,p_name=>'COPY.TO.CLIPBOARD.APEX'
+,p_name=>'COPY TO CLIPBOARD'
 ,p_display_name=>'Copy To Clipboard'
 ,p_category=>'EFFECT'
 ,p_supported_ui_types=>'DESKTOP'
@@ -74,11 +55,11 @@ wwv_flow_api.create_plugin(
 ,p_subscribe_plugin_settings=>true
 ,p_version_identifier=>'1.0'
 ,p_about_url=>'https://github.com/akilr/Copy-To-Clipboard'
-,p_files_version=>57
+,p_files_version=>2
 );
 wwv_flow_api.create_plugin_attribute(
- p_id=>wwv_flow_api.id(16154015871687039125)
-,p_plugin_id=>wwv_flow_api.id(16152554132576998999)
+ p_id=>wwv_flow_api.id(5319714455474616)
+,p_plugin_id=>wwv_flow_api.id(5319287118471221)
 ,p_attribute_scope=>'COMPONENT'
 ,p_attribute_sequence=>1
 ,p_display_sequence=>10
@@ -88,8 +69,8 @@ wwv_flow_api.create_plugin_attribute(
 ,p_is_translatable=>false
 );
 wwv_flow_api.create_plugin_attribute(
- p_id=>wwv_flow_api.id(16165313746949277047)
-,p_plugin_id=>wwv_flow_api.id(16152554132576998999)
+ p_id=>wwv_flow_api.id(5320069101481719)
+,p_plugin_id=>wwv_flow_api.id(5319287118471221)
 ,p_attribute_scope=>'COMPONENT'
 ,p_attribute_sequence=>2
 ,p_display_sequence=>20
@@ -97,10 +78,8 @@ wwv_flow_api.create_plugin_attribute(
 ,p_attribute_type=>'TEXT'
 ,p_is_required=>false
 ,p_default_value=>'Copied to Clipboard!'
-,p_max_length=>200
-,p_supported_ui_types=>'DESKTOP'
+,p_max_length=>500
 ,p_is_translatable=>true
-,p_help_text=>'The maximum length of the message can only be 200 characters.'
 );
 end;
 /
@@ -124,8 +103,8 @@ end;
 /
 begin
 wwv_flow_api.create_plugin_file(
- p_id=>wwv_flow_api.id(16152669675410003648)
-,p_plugin_id=>wwv_flow_api.id(16152554132576998999)
+ p_id=>wwv_flow_api.id(5320485040484778)
+,p_plugin_id=>wwv_flow_api.id(5319287118471221)
 ,p_file_name=>'CopyToClipboard.js'
 ,p_mime_type=>'text/javascript'
 ,p_file_charset=>'utf-8'
@@ -133,9 +112,8 @@ wwv_flow_api.create_plugin_file(
 );
 end;
 /
-prompt --application/end_environment
 begin
-wwv_flow_api.import_end(p_auto_install_sup_obj => nvl(wwv_flow_application_install.get_auto_install_sup_obj, false));
+wwv_flow_api.import_end(p_auto_install_sup_obj => nvl(wwv_flow_application_install.get_auto_install_sup_obj, false), p_is_component_import => true);
 commit;
 end;
 /
